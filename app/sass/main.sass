@@ -1,0 +1,95 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+
+html, body
+	color: #000
+	background-color: #fff
+	width: 100%
+	line-height: 1.4
+	overflow-x: hidden
+	font-family: $font
+a
+	color: $accent
+	&:hover
+		text-decoration: none
+		
+.btn
+	background-color: $accent
+	border-radius: 60px
+	font-family: $font
+	font-size: 30px
+	text-transform: uppercase
+	text-decoration: none
+	padding: 9px 90px
+	color: #fff
+	max-width: 946px
+	width: 100%
+	height: 116px
+	line-height: 104px
+	display: block
+	text-align: center
+	transition: all .5s ease
+	&:hover
+		background-color: darken($accent, 10%)
+		color: #fff
+
+h1, .h1
+	font-size: 73px
+	font-family: $font
+	font-weight: bold
+	color: #fff
+	text-transform: uppercase
+	margin-top: 200px
+	margin-bottom: 234px
+	position: relative
+	z-index: 2000
+
+.container
+	margin: 0 auto
+	max-width: 1360px
+	width: 100%
+	padding: 0
+
+.main
+	margin: 0 auto
+	width: 90%
+
+// HEADER
+.header
+	background-color: $bg
+	min-height: 1360px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: -157px
+		right: -389px
+		background: url('../img/bg_right2.png') no-repeat right
+		width: 100%
+		height: 100%
+		z-index: 1000
+	&:before
+		content: ''
+		position: absolute
+		top: -157px
+		left: -181px
+		background: url('../img/bg_left.png') no-repeat left
+		width: 100%
+		height: 100%
+		z-index: 1000
+	&__text
+		background-color: $accent
+		color: #fff
+		display: inline-block
+		padding: 0 100px 0 24px
+		font-size: 2
+		font-size: 27px
+		margin-bottom: 10px
+
+
+@import "media" // Всегда в конце
